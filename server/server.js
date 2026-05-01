@@ -23,6 +23,7 @@ app.get('/health', (req, res) => {
   res.status(200).json({ message: 'Server is running!' });
 });
 
+// docker run 
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack, next);
